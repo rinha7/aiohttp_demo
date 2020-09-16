@@ -1,3 +1,5 @@
+# routes.py
+
 from aiohttpdemo_blog.views import index, login, logout, create_post
 
 

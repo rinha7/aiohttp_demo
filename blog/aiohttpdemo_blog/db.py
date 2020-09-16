@@ -59,19 +59,19 @@ async def get_user_by_name(conn, username):
     )
     return result
 
-
-async def get_users(conn):
-    records = await conn.fetch(
-        users.select().order_by(users.c.id)
-    )
-    return records
-
-
-async def get_posts(conn):
-    records = await conn.fetch(
-        posts.select().order_by(posts.c.id)
-    )
-    return records 
+#
+# async def get_users(conn):
+#     records = await conn.fetch(
+#         users.select().order_by(users.c.id)
+#     )
+#     return records
+#
+#
+# async def get_posts(conn):
+#     records = await conn.fetch(
+#         posts.select().order_by(posts.c.id)
+#     )
+#     return records
 
 
 async def get_posts_with_joined_users(conn):

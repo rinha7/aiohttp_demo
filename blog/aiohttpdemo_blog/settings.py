@@ -1,3 +1,5 @@
+# settings.py
+
 import pathlib
 import pytoml as toml
 
